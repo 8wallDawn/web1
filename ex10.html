@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var fruits = {
+      "Afruit":"Apple",
+      "Bfruit":"Banana"
+      };
+      document.write("A fruit : "+fruits.Afruit+"<br>");
+      document.write("B fruit : "+fruits.Bfruit+"<br>");
+
+      fruits.Cfruit = "Coconut";
+      document.write("C fruit : "+fruits.Cfruit+"<br>");
+
+      fruits["another Afruit"] = "Avocado";
+      document.write("another Afruit : "+fruits["another Afruit"]+"<br>");
+
+    </script>
+
+    <h2>Iterate</h2>
+    <script>
+      for(var key in fruits) {
+        document.write(key+'<br>');
+      }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      fruits.showAll = function() {
+        for(var property in this) {
+          document.write(property+' : '+this[property]+'<br>');
+        }
+      }
+      fruits.showAll();
+    </script>
+  </body>
+</html>

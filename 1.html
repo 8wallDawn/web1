@@ -3,25 +3,31 @@
 <head>
   <title>WEB1-HTML</title>
   <meta charset="utf-8">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190577678-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190577678-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-190577678-1');
-</script>
-
+    gtag('config', 'UA-190577678-1');
+  </script>
+  <script src="colors.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" name="" value="night" onclick="themeChanger(this)
+  ">
+  <div id="grid">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li>
+    <li><a href="4.html">atom and github fetch test</a></li>
   </ol>
+  <div id="article">
   <h2>HTML</h2>
   <p>
     <!-- 유튜브 공유 버튼을 통한 소스코드 첨부 -->
@@ -93,5 +99,7 @@
     </script>
     <!--End of Tawk.to Script-->
   </p>
+  </div>
+</div>
 </body>
 </html>
